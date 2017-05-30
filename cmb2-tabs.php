@@ -23,7 +23,7 @@ if( !class_exists( 'CMB2_Tabs' ) ) {
         /**
          * Current version number
          */
-        const VERSION = '1.0.0';
+        const VERSION = '1.0.1';
 
         /**
          * Initialize the plugin by hooking into CMB2
@@ -51,7 +51,7 @@ if( !class_exists( 'CMB2_Tabs' ) ) {
                             $fields_selector = array();
 
                             foreach( $tab['fields'] as $tab_field )  :
-                                $fields_selector[] = '.' . 'cmb2-id-' . str_replace( '_', '-', sanitize_html_class( $tab_field ) );
+                                $fields_selector[] = '.' . 'cmb2-id-' . str_replace( '_', '-', sanitize_html_class( $tab_field ) ) . ':not(.cmb2-tab-ignore)';
                             endforeach;
 
                             $fields_selector = apply_filters( 'cmb2_tabs_tab_fields_selector', $fields_selector, $tab, $cmb_id, $object_id, $object_type, $cmb );
