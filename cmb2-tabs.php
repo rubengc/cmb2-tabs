@@ -1,14 +1,18 @@
 <?php
-/*
-Plugin Name: CMB2 Tabs
-Plugin URI: https://github.com/rubengc/cmb2-tabs
-GitHub Plugin URI: https://github.com/rubengc/cmb2-tabs
-Description: Tabs for CMB2 boxes.
-Version: 1.0.1
-Author: Ruben Garcia
-Author URI: http://rubengc.com/
-License: GPLv2+
-*/
+/**
+ * @package      CMB2\Tabs
+ * @author       Tsunoa
+ * @copyright    Copyright (c) Tsunoa
+ *
+ * Plugin Name: CMB2 Tabs
+ * Plugin URI: https://github.com/rubengc/cmb2-tabs
+ * GitHub Plugin URI: https://github.com/rubengc/cmb2-tabs
+ * Description: Tabs for CMB2 boxes.
+ * Version: 1.0.1
+ * Author: Ruben Garcia
+ * Author URI: http://rubengc.com/
+ * License: GPLv2+
+ */
 
 
 // Exit if accessed directly
