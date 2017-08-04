@@ -36,4 +36,10 @@
             tab.addClass('active');
         }
     });
+   
+    // Adding a new group element needs to get the active class also
+    $('body').on('click', '.cmb-add-group-row.button', function(){
+        $(this).closest('.cmb-repeatable-group').find('.cmb-row').addClass('cmb-tab-active-item');
+    });
+    
 })(jQuery);
