@@ -7,6 +7,9 @@
                 $(this).find('.cmb-tab').first().addClass('active');
 
                 $($(this).find('.cmb-tab').first().data('fields')).addClass('cmb-tab-active-item');
+                
+                // Support for groups
+                $($(this).find('.cmb-tab').first().data('fields')).find('.cmb-repeatable-group .cmb-row').addClass('cmb-tab-active-item');
             }
         });
     }
