@@ -7,6 +7,9 @@
                 $(this).find('.cmb-tab').first().addClass('active');
 
                 $($(this).find('.cmb-tab').first().data('fields')).addClass('cmb-tab-active-item');
+                
+                // Support for groups
+                $($(this).find('.cmb-tab').first().data('fields')).find('.cmb-repeatable-group .cmb-row').addClass('cmb-tab-active-item');
             }
         });
     }
@@ -33,4 +36,10 @@
             tab.addClass('active');
         }
     });
+   
+    // Adding a new group element needs to get the active class also
+    $('body').on('click', '.cmb-add-group-row.button', function(){
+        $(this).closest('.cmb-repeatable-group').find('.cmb-row').addClass('cmb-tab-active-item');
+    });
+    
 })(jQuery);
