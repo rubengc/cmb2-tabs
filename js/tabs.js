@@ -28,6 +28,7 @@
 
                 form.find(tab.data('fields')).fadeIn('fast', function() {
                     $(this).addClass('cmb-tab-active-item');
+                    $(this).find('.cmb-repeatable-group .cmb-row').addClass('cmb-tab-active-item');
                 });
             });
 
