@@ -91,8 +91,8 @@ if( !class_exists( 'CMB2_Tabs' ) ) {
             if( $cmb->prop( 'tabs' ) && is_array( $cmb->prop( 'tabs' ) ) ) { 
                     ?></div><?php 
 				if ( !is_admin() ) {
-					echo "<link rel='stylesheet' id='cmb2_grid_bootstrap_light-css' href='" . plugins_url( 'css/tabs.css', __FILE__ ) . "' type='text/css' media='all' />";
-					echo "<script type='text/javascript href='" . plugins_url( 'js/tabs.js', __FILE__ ) . "'></script>";
+					echo '<link rel="stylesheet" id="cmb2_grid_bootstrap_light-css" href="' . plugins_url( 'css/tabs.css', __FILE__ ) . '" type="text/css" media="all" />';
+					echo '<script type="text/javascript" src="' . plugins_url( 'js/tabs.js', __FILE__ ) . '"></script>';
 				}
             }
         }
