@@ -88,7 +88,13 @@ if( !class_exists( 'CMB2_Tabs' ) ) {
          * @param array  $cmb         This CMB2 object
          */
         public function after_form( $cmb_id, $object_id, $object_type, $cmb ) {
-            if( $cmb->prop( 'tabs' ) && is_array( $cmb->prop( 'tabs' ) ) ) : ?></div><?php endif;
+            if( $cmb->prop( 'tabs' ) && is_array( $cmb->prop( 'tabs' ) ) ) { 
+                    ?></div><?php 
+				if ( !is_admin() ) {
+					echo "<link rel='stylesheet' id='cmb2_grid_bootstrap_light-css' href='" . plugins_url( 'css/tabs.css', __FILE__ ) . "' type='text/css' media='all' />";
+					echo "<script type='text/javascript href='" . plugins_url( 'js/tabs.js', __FILE__ ) . "'></script>";
+				}
+            }
         }
 
         /**
