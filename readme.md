@@ -74,14 +74,19 @@ function cmb2_sample_metabox() {
 
 ## Changelog
 
+### 1.0.3
+
+* Added support for dark mode.
+* Fixed tab display on widgets screen.
+
 ### 1.0.2
 
-* Fixed add group row selector
+* Fixed add group row selector.
 
 ### 1.0.1
 
-* Added cmb2-tab-ignore utility
+* Added cmb2-tab-ignore utility.
 
 ### 1.0.0
 
-* Initial commit
+* Initial commit.
