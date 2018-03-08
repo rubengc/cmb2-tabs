@@ -45,6 +45,10 @@
     background-color: #fff;
 }
 
+.entry-content .cmb-form .button-primary {
+	float:right;
+}
+
 .cmb-tabs-wrap .cmb2-wrap {
     padding-left: 12px;
     padding-right: 12px;
