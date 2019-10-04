@@ -58,6 +58,10 @@
     display: none;
 }
 
+.cmb-tabs-wrap .cmb2-wrap .cmb-row.cmb-repeat-row {
+    display: block;
+}
+
 /* Vertical tabs */
 .cmb-tabs-wrap.cmb-tabs-vertical {
     -ms-flex-wrap: nowrap;
