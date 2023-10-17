@@ -44,7 +44,7 @@ if( !class_exists( 'RGC_CMB2_Tabs' ) ) {
          * @param array  $cmb_id      The current box ID
          * @param int    $object_id   The ID of the current object
          * @param string $object_type The type of object you are working with.
-         * @param array  $cmb         This CMB2 object
+         * @param object  $cmb         This CMB2 object
          */
         public function before_form( $cmb_id, $object_id, $object_type, $cmb ) {
             if( $cmb->prop( 'tabs' ) && is_array( $cmb->prop( 'tabs' ) ) ) : ?>
@@ -97,7 +97,7 @@ if( !class_exists( 'RGC_CMB2_Tabs' ) ) {
          * @param array  $cmb_id      The current box ID
          * @param int    $object_id   The ID of the current object
          * @param string $object_type The type of object you are working with.
-         * @param array  $cmb         This CMB2 object
+         * @param object  $cmb         This CMB2 object
          */
         public function after_form( $cmb_id, $object_id, $object_type, $cmb ) {
             if( $cmb->prop( 'tabs' ) && is_array( $cmb->prop( 'tabs' ) ) ) : ?>
